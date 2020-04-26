@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+
+.header {
+	height: auto;
+	nav {
+		background: rgba(0, 0, 0, 0.2);
+	}
+}
+.video-cta {
+	height: auto;
+}
+
+@media (min-width: 1024px) {
+	.header {
+		height: 762px;
+	}
+	.video-cta {
+		height: 582px;
+	}
+}
+
+.btn-primary {
+	@apply bg-primary text-white px-10 py-3 my-2 inline-block;
+}
+
+.btn-primary:hover {
+	@apply bg-black;
+}
+h1 {
+	@apply font-display;
+}
+body {
+	@apply font-body;
+}
+
+@tailwind utilities;
