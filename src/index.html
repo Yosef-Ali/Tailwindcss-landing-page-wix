@@ -22,8 +22,35 @@
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
-<body>
-	<div>
-		Hello World!
-	</div>
+<body class="antialiased bg-black">
+	<header class="header container mx-auto relative">
+		<div class="absolute z-negative inset-0 gl:opacity-100 opacity-50">
+			<video
+				src="./img/video.mp4"
+				autoplay
+				muted
+				loop
+				class="object-cover w-full h-full"
+			></video>
+		</div>
+		<div class="flex-1 flex items-center justify-between">
+			<nav class="md:p-3 py-2 px-3 z-10">
+				<a href="#">
+					<img src="./img/logo.webp" alt="GSL Logo" />
+				</a>
+			</nav>
+			<button dataMenuToggle class="md:hidden block pr-1">
+				<svg
+					class="fill-current text-white w-6 h-6"
+					xmlns="http://www.w3.org/2000/svg"
+					width="20"
+					height="20"
+					viewBox="0 0 20 20"
+				>
+					<title>menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+		</div>
+	</header>
 </body>
